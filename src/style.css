@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-fondo: #1A1A1A;
+    --color-tarjetas: #2C2C2C;
+    --color-botones: #D4A017;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #C8C8C8;
+  }
+}
