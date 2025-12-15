@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="shortcut icon" href="public/logo.png" type="image/png">
     <title>IZANFEXX</title>
   </head>
 
@@ -98,14 +99,17 @@
       <!--DIV DE LOS BOTONES-->
       <div class="absolute right-5 top-5 hidden md:block font-medium">
         <!--BOTON DE REGISTRO-->
-        <button class="w-auto border-2 border-amber-300 rounded-full p-2 px-4 
-        shadow-2xl shadow-black 
-        backdrop-blur-xs 
-        hover:shadow-amber-400/50 hover:shadow-lg hover:bg-amber-200 hover:text-black
-        text-amber-300
-        transition duration-500">
-          Registrarse
-        </button>
+        <a href="pages/register.html">
+          <button class="w-auto border-2 border-amber-300 rounded-full p-2 px-4 
+          shadow-2xl shadow-black 
+          backdrop-blur-xs 
+          hover:shadow-amber-400/50 hover:shadow-lg hover:bg-amber-200 hover:text-black
+          text-amber-300
+          transition duration-500">
+            Registrarse
+          </button>
+        </a>
+        
         <!--BOTON DE INICIAR SESION-->
         <a href="/pages/login.html">
         <button class="w-auto
@@ -119,7 +123,7 @@
       </div>
 
       <!--TEXTO DEL MEDIO DEL VIDEO-->
-      <h1 class="hidden absolute md:flex w-full justify-center items-center text-white text-5xl text-shadow-lg/50 text-shadow-amber-100">HOLA</h1>
+      <h1 class="hidden absolute md:flex w-full justify-center items-center text-white text-9xl text-shadow-lg/50 text-shadow-amber-100">AQUI TEXTO</h1>
       
       <video src="/video/fondo.mp4" autoplay loop muted playsinline class="max-h-screen mx-auto pointer-events-none"></video>
       
@@ -132,12 +136,12 @@
           w-full max-w-2/3 rounded-4xl
           mb-3
           backdrop-blur-xs"> 
-              <div class="flex flex-row w-full justify-between mx-15">
+              <div class="flex flex-row w-full justify-between lg:mx-15 md:mx-8">
                 <div>
                   <a class="hover:text-white transition duration-300 visited:decoration-0" href="pages/portfolio.html">Portafolio</a>
                 </div>
                 <div>
-                  <a class="hover:text-amber-300 transition duration-300 visited:decoration-0" href="#">Planes de contratación</a>
+                  <a class="hover:text-amber-300 transition duration-300 visited:decoration-0" href="pages/plans.html">Planes de contratación</a>
                 </div>
                 <div>
                   <a class="hover:text-amber-300 transition duration-300 visited:decoration-0" href="#">Sobre mí</a>
@@ -159,7 +163,7 @@
         <a class="visited:decoration-0 " href="#">Incio-</a>
         <a class="visited:decoration-0 hover:text-amber-300" href="#">Sobre mí-</a>
         <a class="visited:decoration-0 hover:text-amber-300" href="#">Proyectos-</a>
-        <a class="visited:decoration-0 hover:text-amber-300" href="#">Contactos</a>
+        <a class="visited:decoration-0 hover:text-amber-300" href="#">Contacto</a>
       </p>
     </footer>
   </body>

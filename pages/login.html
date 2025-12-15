@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
     <title>LOGIN</title>
   </head>
   <body
-    style="background-color: #1a1a1a"
+    style="background-color: var(--color-fondo)"
     class=" flex flex-col h-screen items-center justify-center"
   >
   <video src="/video/fondo.mp4" autoplay loop muted playsinline class="max-h-screen mx-auto pointer-events-none absolute w-full z-0"></video>
@@ -17,14 +18,14 @@
 
       <h1 class="text-white text-7xl h-auto py-10">Iniciar sesión</h1>
 
-      <form action="" class="text-white flex flex-col text-left p-5 w-full items-center">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" class="border-1 border-white rounded-xl w-full pl-2 py-1 focus:outline-2 focus:-outline-offset-2 focus:outline-amber-300"/>
+      <form action="" class="relative text-white flex flex-col text-left p-5 w-full items-center">
+        <label for="email" class="absolute top-0 left-9 transform translate-y-1.5 px-1 text-base bg-(--color-fondo) text-white">Email</label>
+        <input type="email" name="email" id="email" class="border-1 border-white rounded-xl w-full pl-2 py-2 focus:outline-2 focus:-outline-offset-2 focus:outline-amber-300"/>
 
         <p class="py-2"></p>
 
-        <label for="passwd" class="">Contraseña</label>
-        <input type="text" name="passwd" id="" class="border-1 border-white rounded-xl w-full pl-2 py-1 focus:outline-2 focus:-outline-offset-2 focus:outline-amber-300">
+        <label for="passwd" class="absolute top-15 left-9 transform translate-y-1.5 px-1 text-base bg-(--color-fondo) text-white">Contraseña</label>
+        <input type="text" name="passwd" id="" class="border-1 border-white rounded-xl w-full pl-2 py-2 focus:outline-2 focus:-outline-offset-2 focus:outline-amber-300">
 
         <a class="text-center pt-5 pb-5 underline hover:text-amber-300 transition duration-300">¿Has olvidado tu contraseña?</a>
 
@@ -45,7 +46,7 @@
     <footer class="absolute bottom-0 h-auto w-full mb-3.5 pt-2.5">
       <p class="text-white text-center">© 2025 Izanfexx</p>
       <p class="flex flex-row justify-center text-white">
-        <a class="visited:decoration-0 hover:text-amber-300" href="#">Incio-</a>
+        <a class="visited:decoration-0 hover:text-amber-300" href="../index.html">Incio-</a>
         <a class="visited:decoration-0 hover:text-amber-300" href="#">Sobre mí-</a>
         <a class="visited:decoration-0 hover:text-amber-300" href="#">Proyectos-</a>
         <a class="visited:decoration-0 hover:text-amber-300" href="#">Contactos</a>
