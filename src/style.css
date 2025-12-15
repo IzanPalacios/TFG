@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "@fontsource/noto-sans/400.css";
+@import "@fontsource/noto-sans/500.css";
+@import "@fontsource/noto-sans/700.css";
 
 @layer base {
   :root {
@@ -7,5 +10,11 @@
     --color-botones: #D4A017;
     --color-blanco: #FFFFFF;
     --color-gris-claro: #C8C8C8;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Noto Sans", ui-sans-serif, system-ui;
   }
 }
