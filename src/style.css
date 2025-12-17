@@ -18,3 +18,21 @@
     font-family: "Noto Sans", ui-sans-serif, system-ui;
   }
 }
+
+@layer components {
+  .btn-iniciar {
+    @apply w-auto
+        bg-amber-400
+        rounded-full p-2 px-4 
+        hover:shadow-amber-400/50 hover:shadow-lg hover:bg-amber-200
+        transition duration-500;
+  }
+
+  .tarjeta-precios{
+    @apply absolute bg-(--color-fondo) border-1 border-white rounded-2xl flex flex-col justify-center items-center w-1/3 shadow-2xl;
+  }
+
+  .video-login{
+    @apply hidden md:flex md:h-full md:mx-auto md:pointer-events-none md:absolute md:z-0
+  }
+}
